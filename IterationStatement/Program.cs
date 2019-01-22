@@ -1,4 +1,11 @@
-﻿using System;
+﻿
+/*
+    Author: Gregory Gauthier
+    Date: 1/22/2019
+    Comments: This assignment shows off iterative statements.
+*/
+
+using System;
 
 namespace IterationStatement
 {
@@ -31,7 +38,8 @@ namespace IterationStatement
 
             catch
             {
-                Console.WriteLine("Please enter an Integer Value and Try again");
+                Console.WriteLine("Please enter an Integer Value and Try again"); 
+                // If the User entered a bad value non-integer, have them try again.
                 Console.WriteLine("Press any key to exit the program...");
                 Console.ReadKey(true);
 
