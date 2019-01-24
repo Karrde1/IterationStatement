@@ -25,14 +25,23 @@ namespace IterationStatement
 
                 int InputValue = int.Parse(input);
 
+
+                // When the user inputs a value, perform this statement if the value is between 0 and 100
                 while (InputValue > 0 && InputValue <= 100)
                 {
                     Console.WriteLine("This will Execute a While Loop");
 
+                    // Here I am concatenating the string and iterating InputValue. The -- will cause the value to decriment.
                     Console.WriteLine("You Have Entered " + InputValue.ToString() + ". This is the current integer value in the loop: #" + InputValue--);
+                }
+                // Check to see if the users input Value exceeds the stated argument values
+                if (InputValue > 100 && InputValue < 0)
+                {
+                    Console.WriteLine("Please Enter a Different Number that Falls Between 0 - 100");
                 }
 
                 Console.WriteLine("Press any key to exit the program...");
+                // When the user presses a key, close the program
                 Console.ReadKey(true);
             } // End of Try
 
